@@ -36,6 +36,7 @@ public class Startup
 
     // NOTE creates one catsService and hands it out as needed
     services.AddScoped<CatsService>();
+    services.AddSingleton<CatsRepository>();
   }
 
   private void ConfigureCors(IServiceCollection services)
